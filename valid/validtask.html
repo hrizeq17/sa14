@@ -66,7 +66,7 @@
         function checkEmail() {
             const email = document.getElementById('email').value;
             const error = document.getElementById('email-error');
-            // Simple email pattern
+          
             const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
             if (regex.test(email)) {
@@ -81,7 +81,7 @@
         function checkPassword() {
             const password = document.getElementById('password').value;
             const error = document.getElementById('password-error');
-            // Password pattern
+          
             const regex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
 
             if (regex.test(password)) {
