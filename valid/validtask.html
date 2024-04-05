@@ -39,7 +39,7 @@
 
     <script>
         document.getElementById('registration-form').addEventListener('submit', function(e) {
-            e.preventDefault(); // Prevent form submission to server for demonstration
+            e.preventDefault(); 
 
             let isUsernameValid = checkUsername(),
                 isEmailValid = checkEmail(),
@@ -55,7 +55,7 @@
             const error = document.getElementById('username-error');
 
             if (username.length >= 6) {
-                error.textContent = ''; // Clear error message
+                error.textContent = ''; 
                 return true;
             } else {
                 error.textContent = 'Username must be at least 6 characters.';
